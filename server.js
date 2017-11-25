@@ -28,7 +28,7 @@ require('./routers')(server);
 
 // CONFIGURACIONES DB
 // Integración de mongoose
-mongoose.connect('mongodb://CarlosPlasencia:123456@ds119406.mlab.com:19406/libertrash', { useMongoClient: true });
+mongoose.connect('mongodb://localhost/libertrash', { useMongoClient: true });
 mongoose.Promise = global.Promise;
 
 // INICIAR SERVIDOR
