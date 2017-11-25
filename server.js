@@ -25,7 +25,7 @@ require('./routers')(server);
 
 // CONFIGURACIONES DB
 // Integración de mongoose
-mongoose.connect('mongodb://NestorPlasencia:omoshiroi@ds117316.mlab.com:17316/hackspace3', { useMongoClient: true });
+mongoose.connect('mongodb://CarlosPlasencia:123456@ds119406.mlab.com:19406/libertrash', { useMongoClient: true });
 mongoose.Promise = global.Promise;
 
 // INICIAR SERVIDOR
