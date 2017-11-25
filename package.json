@@ -1,0 +1,24 @@
+{
+  "name": "libertrash",
+  "version": "1.0.0",
+  "description": "api libertrash",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "6.11.3"
+  },
+  "author": "Carlos Plasencia",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fcm-node": "^1.2.1",
+    "mongoose": "^4.13.1",
+    "superagent": "^3.8.1",
+    "swig": "^1.4.2"
+  }
+}
