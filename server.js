@@ -25,8 +25,8 @@ require('./routers')(server);
 
 // CONFIGURACIONES DB
 // Integración de mongoose
-mongoose.connect('mongodb://localhost/libertrash', { useMongoClient: true });
-mongoose.Promise = global.Promise
+mongoose.connect('mongodb://NestorPlasencia:omoshiroi@ds117316.mlab.com:17316/hackspace3', { useMongoClient: true });
+mongoose.Promise = global.Promise;
 
 // INICIAR SERVIDOR
 // Se corre el servidor en el puerto 8000
