@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "prestart": "NODE_PATH=./ babel server.js --out-dir dist",
+    "start": "NODE_PATH=./ NODE_ENV=prod API=$API node dist/server",
+    "prod": "NODE_PATH=./ NODE_ENV=prod node dist/server.js",
   },
   "engines": {
     "node": "6.11.3"

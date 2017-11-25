@@ -34,5 +34,5 @@ mongoose.Promise = global.Promise;
 // INICIAR SERVIDOR
 // Se corre el servidor en el puerto 8000
 server.listen(8000, function () {
-    console.log('Servidor esta escuchando en el puerto ' + 5000)
+    console.log('Servidor esta escuchando en el puerto ' + 8000)
 });
