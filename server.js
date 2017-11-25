@@ -4,6 +4,7 @@
 // REQUERIMIENTO DE MODULOS
 var express = require('express');
 var swig = require('swig');
+var cors = require('cors');
 // Requerimiento de mongoose
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
@@ -19,6 +20,8 @@ swig.setDefaults({ cache: false });
 //Integracion de bodyParser
 server.use(bodyParser.urlencoded({ extended: false }));
 server.use(bodyParser.json());
+
+server.use(cors())
 
 // Importacion de rutas
 require('./routers')(server);
